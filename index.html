@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Update the 'content' attribute to reflect the actual content description -->
+    <meta name="description" content="your_description_goes_here">
+
+    <!-- Modify the 'content' attribute to include appropriate keywords -->
+    <meta name="keywords" content="your_keywords_goes_here">
+
+    <meta name="author" content="tigmatemplate">
+    <meta name="generator" content="Bootstrap">
+
+    <!-- Change the text within the <title> tag to match the webpage's content -->
+    <title> your_title_goes_here </title>
+
+    <!-- 
+        Set the website's favicon and Apple touch icon using the files in the assets/logo folder. You can change these files to your own icons by replacing them with the same names and sizes.
+
+        Be careful if you change the site.webmanifest file, as you need to update the src attribute of the icons array to match the new path of your icon files. Otherwise, your icons may not display correctly on some devices. 
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
+    <link rel="manifest" href="./assets/logo/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
+    <meta property="og:title" content="your_title_goes_here">
+    <meta property="og:description" content="your_description_goes_here">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
+    <meta property="og:image" content="your_absolute_image_url_goes_here">
+    <!-- Update with the absolute URL of the content like: https://example.com/index.html -->
+    <meta property="og:url" content="your_absolute_content_url_goes_here">
+    <!-- Update with the type of object you’re sharing. (e.g., article, website, etc.) -->
+    <meta property="og:type" content="website">
+    <!-- Defines the content language -->
+    <meta property="og:locale" content="en_US">
+
+    
+    <!-- X/Twitter Card Meta Tags for Social Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Update with your X/Twitter handle -->
+    <meta name="twitter:site" content="@yourtwitterhandle"> 
+    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
+    <meta name="twitter:title" content="your_title_goes_here"> 
+    <meta name="twitter:description" content="your_description_goes_here">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
+    <meta name="twitter:image" content="your_absolute_image_url_goes_here"> 
+    
+    <!-- 
+        The following line specifies the canonical URL for this page.
+        Replace your_canonical_url_goes_here with the actual canonical URL if needed like: https://example.com/index.html
+        Or just remove it!!!!
+    -->
+    <link rel="canonical" href="your_canonical_url_goes_here">
+
+</head>
+<body>
+
+
+    <!-- loader-wrapper -->
+ 
+    
+<div class="loader-wrapper">
+        <div class="spinner-grow text-primary p-5" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- header top -->
+    <div class="navigation position-absolute w-100 rounded-bottom-4 rounded-bottom-sm-5" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-xl px-2" aria-label="Offcanvas navbar large">
+            <div class="container px-3 py-2">
+                <a class="navbar-brand p-1 ps-0" href="./index.html">
+                    <img src="./assets/logo/logo.png" height="32" alt="logo"> <h5 style="color: aqua; font-family: sans-serif;">immobilier Meknes</h5>
+                </a>
+
+                <button class="navbar-toggler collapsed" 
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                        aria-controls="offcanvasNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header px-4 pt-4 pb-0">
+                        <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
+                            <a class="navbar-brand px-2 py-1" href="javascript:;">
+                                <img src="./assets/logo/logo.png" height="32" alt="logo">
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close text-body-emphasis" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav align-items-xl-center justify-content-end flex-grow-1 column-gap-2 row-gap-2">
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#home')"
+                                    class="nav-link px-3 text-base fw-semibold leading-6 text-white text-primary-emphasis-hover">
+                                    Acceuil
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#about-us')"
+                                    class="nav-link px-3 text-base fw-semibold leading-6 text-white text-primary-emphasis-hover">
+                                    Apropos de Nous
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#services')"
+                                    class="nav-link px-3 text-base fw-semibold leading-6 text-white text-primary-emphasis-hover">
+                             
+                             Catégories
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#portfolio')"
+                                    class="nav-link px-3 text-base fw-semibold leading-6 text-white text-primary-emphasis-hover">
+                                    Service
+                                </a>
+                            </li>
+ 
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- Hero -->
+    <div id="home" class="overflow-hidden">
+        <div class="min-vh-100 d-flex align-items-center">
+            <div class="position-absolute top-0 bottom-0 w-100 z-n1">
+                <img src="./assets/img/bg/1.jpg" 
+                 class="object-fit-cover h-100 w-100" 
+                 alt="Poeple talking">
+            </div>
+
+            <div class="position-absolute top-0 bottom-0 w-100 z-n1">
+                <div class="h-100 w-100 dark-gradient"></div>
+            </div>
+
+            <div class="container">
+                <div class="py-8 py-md-9 max-w-2xl">
+                    <div>
+                        <div class="text-start">
+                            <h5 class="m-0 text-white fw-bold tracking-tight  " data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                                Vous cherchez un appartement, une villa, une ferme, un terrain, un lotissement ou des bureaux  a Meknes ? Vous êtes au bon endroit ! Nos agents vous accompagnent jusqu’à votre entière satisfaction
+                            </h5>
+                            <p class="m-0 mt-4 text-lg leading-8 text-white" data-aos-delay="50" data-aos="fade" data-aos-duration="3000">
+                                Vous avez un bien à vendre, à louer ou à confier en gestion locative ? Nous nous en occupons avec plaisir.                            </p>
+                            <div class="mt-4 pt-3 d-flex align-items-center justify-content-start column-gap-3" data-aos-delay="100" data-aos="fade" data-aos-duration="3000">
+                                  <a href="tel:+212666512373" class="btn btn-lg btn-primary text-white text-sm fw-semibold">
+                                    Contactez-Nous 7/7jr
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="position-absolute bottom-0 w-100 mb-3">
+                <div class="container" data-aos-delay="200" data-aos="fade" data-aos-duration="3000">
+                    <a href="#about-us" class="icon-link icon-link-hover text-white opacity-75 opacity-100-hover" style="--bs-icon-link-transform: translate3d(0, .2rem, 0);"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40" height="40" viewBox="0 0 24 24" fill="currentColor" class="bi fs-1"><path d="M12 24C5.383 24 0 18.617 0 12S5.383 0 12 0s12 5.383 12 12-5.383 12-12 12zm0-22.5C6.21 1.5 1.5 6.21 1.5 12S6.21 22.5 12 22.5 22.5 17.79 22.5 12 17.79 1.5 12 1.5z"/><path d="M12 19a.75.75 0 0 1-.75-.75V5.75a.75.75 0 0 1 1.5 0v12.5A.75.75 0 0 1 12 19z"/><path d="M12 19a.744.744 0 0 1-.53-.22l-4-4a.75.75 0 1 1 1.061-1.061l3.47 3.47 3.47-3.47a.75.75 0 1 1 1.061 1.061l-4 4A.752.752 0 0 1 12 19z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- about us -->
+    <div id="about-us" class="overflow-hidden py-7 py-sm-8 py-xl-9">
+        <div class="container">
+            <div class="row gy-5 gx-lg-5 align-items-center justify-content-between">
+                <div class="col-12 col-xl-5 order-xl-last" data-aos-delay="0" data-aos="fade-up" data-aos-duration="3000">
+                    <div class="max-w-xl">
+                        <p class="m-0 text-base fw-semibold leading-7 text-primary-emphasis">
+                            Votre allié pour un achat immobilier réussi
+                        </p>
+                        <h2 class="m-0 mt-2 fw-bold tracking-tight text-body-emphasis text-4xl">
+                         </h2>
+                        <p class="m-0 mt-4 text-xl leading-8 text-body-secondary max-w-lg">
+                            Sécurisez votre investissement immobilier a Meknes avec    immobilier meknes  . Nos agents spécialisés vous accompagnent à chaque étape, de la recherche du bien à la signature de l'acte de vente, pour réaliser votre rêve immobilier en toute sérénité.
+
+
+
+ 
+
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col col-xl-6" data-aos-delay="50" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="max-w-2xl mx-auto mx-xl-0">
+                        <div class="ratio" style="--bs-aspect-ratio: 76.66%;">
+                            <svg width="1918" height="1344" viewBox="0 0 1918 1344" fill="none" xmlns="http://www.w3.org/2000/svg" class="rtl-flip">
+                                <mask id="svgmask1" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-1" y="-1" width="1919" height="1345">
+                                <path d="M1842.23 369.692L1457.29 53.6092C1415.07 18.9466 1362.14 0 1307.52 0H46C20.5949 0 0 20.5949 0 46V1297.5C0 1322.91 20.5949 1343.5 46 1343.5H1871.5C1896.91 1343.5 1917.5 1322.91 1917.5 1297.5V528.897C1917.5 467.238 1889.88 408.821 1842.23 369.692Z" fill="#D9D9D9" stroke="black"/>
+                                </mask>
+
+                                <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/bg/bg2.jpg" mask="url(#svgmask1)" width="100%" height="100%" preserveAspectRatio="xMidYMid slice"></image>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- services -->
+    <div id="services" class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary" data-bs-theme="dark">
+        <div class="container">
+            <div class="mb-5">
+                <div class="max-w-xl">
+                    <h2 class="m-0 mt-2 fw-bold tracking-tight text-body-emphasis text-4xl">
+                        Catégories : achat et vente et gestion locative
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row gy-5 gx-sm-5 row-cols-1 row-cols-xl-3">
+                <div class="col" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <img src="./assets/img/bg/bg3.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            
+
+                                <center>Villa</center>
+
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col" data-aos-delay="100" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <img src="./assets/img/bg/bg4.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                       
+                       <center>Appartements</center>
+                                 
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col" data-aos-delay="200" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <img src="./assets/img/bg/bg5.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                          
+                          <center>Ferme</center>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+          
+        </div>
+
+<br>
+<br>
+
+
+
+
+<div class="container">
+            
+
+    <div class="row gy-5 gx-sm-5 row-cols-1 row-cols-xl-3">
+        <div class="col" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+            <div class="position-relative">
+                <img src="./assets/img/bg/4.jpg" 
+                     class="img-fluid rounded-3" 
+                     alt="tempalte" loading="lazy">
+                <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                    
+
+<center>Location</center>
+
+
+                </a>
+            </div>
+        </div>
+
+        <div class="col" data-aos-delay="100" data-aos="fade" data-aos-duration="3000">
+            <div class="position-relative">
+                <img src="./assets/img/bg/6.jpg" 
+                     class="img-fluid rounded-3" 
+                     alt="tempalte" loading="lazy">
+                <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+               <center>   Lot De Terrain</center>     
+            
+                </a>
+            </div>
+        </div>
+
+        <div class="col" data-aos-delay="200" data-aos="fade" data-aos-duration="3000">
+            <div class="position-relative">
+                <img src="./assets/img/bg/5.jpg" 
+                     class="img-fluid rounded-3" 
+                     alt="tempalte" loading="lazy">
+                <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+               <center>Bureaux</center>     
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4 pt-5 d-flex align-items-center justify-content-center column-gap-3">
+        <a href="tel:0666512373" class="btn btn-lg btn-primary text-white text-sm fw-semibold">
+            Appellez-Nous
+        </a>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+</nav>
+
+
+
+
+
+</div>
+</header>
+<!-- end header section -->
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/+212666512373" class="float bounce" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
+<style>
+
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+    margin-top:16px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-12px);
+    }
+}
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="tel:+212666512373" class="floate bounce" target="_blank">
+<i class="fa fa-phone my-float"></i>
+</a>
+
+
+<style>
+
+.floate{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:120px;
+    right:40px;
+    background-color:#da1425;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+    margin-top:16px;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    25%,
+    50%,
+    75%,
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-12px);
+    }
+}
+</style>
+
+
+ 
+
+
+</style>
+
+
+  
+     
+    </div>
+
+
+  
+    <!-- Portfolio -->
+    <div id="portfolio" class="overflow-hidden py-7 py-sm-8 py-xl-9">
+        <div class="container">
+            <div class="mb-5">
+
+                <center>
+                <div class="max-w-xl">
+                    <h2 class="m-0 mt-2 fw-bold tracking-tight text-body-emphasis text-4xl">
+
+                        À Propos de IMMOBILIER Meknes 
+
+                    </h2>
+                    <br>
+                    <br>
+                    <center>
+                        <p>Notre équipe d’experts locaux possède une connaissance approfondie du marché immobilier marocain, ce qui nous permet de fournir un service personnalisé et professionnel à chacun de nos clients. Au fil des années, nous avons évolué pour devenir l’une des agences les plus respectées et fiables du pays, tout en restant fidèles à nos valeurs fondamentales de transparence, d’intégrité et d’excellence en service client.</p>
+
+                    </center>
+                </div>
+              </center>
+            </div>
+
+            <div class="row gy-5 gx-sm-5 row-cols-1 row-cols-sm-2">
+                <div class="col" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg8.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Conseil en Immobilier
+                                                </a>
+                    </div>
+                </div>
+
+                <div class="col" data-aos-delay="50" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg9.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Vente de Propriétés                        </a>
+                    </div>
+                </div>
+
+                <div class="col" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg10.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Location de Biens
+                                                </a>
+                    </div>
+                </div>
+
+                <div class="col" data-aos-delay="50" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg11.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Gestion Immobilière
+                                                </a>
+                    </div>
+                </div>
+
+
+
+                <div class="col" data-aos-delay="50" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg12.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Investissement Immobilier à Meknes                                                </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col" data-aos-delay="50" data-aos="fade" data-aos-duration="3000">
+                    <div class="position-relative">
+                        <div class="ratio ratio-4x3">
+                        <img src="./assets/img/bg/bg13.jpg" 
+                             class="img-fluid rounded-3" 
+                             alt="tempalte" loading="lazy">
+                        </div>
+                        <a href="javascript:;" class="mt-3 d-block text-xl fw-medium tracking-tight text-decoration-none text-body-tertiary text-body-emphasis-hover stretched-link">
+                            Projets de Développement Immobilier
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4 pt-5 d-flex align-items-center justify-content-center column-gap-3">
+                <a href="javascript:;" class="btn btn-lg btn-primary text-white text-sm fw-semibold">
+
+
+                    Appellez-Nous
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- blog -->
+   
+
+
+    <div id="contact-us" class="overflow-hidden">
+        <div class="container py-7 pt-sm-8 pt-xl-9">
+            <div class="row gy-5 gx-sm-5">
+                <div class="col-12 col-xl-4">
+                    <div>
+                        <h2 class="m-0 fw-bold tracking-tight text-3xl text-body-emphasis">
+                            Contact
+                        </h2>
+                        <p class="m-0 mt-3 leading-7 ">
+                            Besoin d’informations ou d’assistance pour votre projet immobilier ?
+
+                            Contactez-nous dès maintenant et notre équipe se fera un plaisir de vous accompagner.                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <div class="row gy-4 gx-sm-4">
+                        <div class="col-12 col-md-6" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
+                            <div class="rounded-4 bg-body-tertiary" style="padding: 2.5rem !important;">
+                                <h3 class="text-body-emphasis fw-semibold leading-7 text-base m-0">
+                                    Pour vos demandes :
+                                </h3>
+
+                                <dl class="m-0 leading-6 text-sm" style="margin-top: 0.75rem !important;">
+                                    <div>
+                                      
+                                        <dd class="m-0">
+                                            <a class="fw-semibold text-primary-emphasis text-decoration-none" href="mailto:collaborate@example.com">
+                                                +212 6 66 51 23 73 
+                                             <br>   +212 6 66 50 58 59
+    
+    
+                                            </a>
+                                        </dd>
+                                    </div>
+                                    <div class="mt-1">
+                                        <dt class="visually-hidden">Phone number</dt>
+                                        <dd>        AVN   Forces Armees Royales CT ROJA Residance Omar  MEKNES 50010
+                                        </dd>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+
+                      
+
+                      
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+ 
+        <div class="container">
+            <hr class="my-5 text-body-emphasis opacity-10">
+        </div>
+
+    
+    </div>
+
+
+    <footer class="overflow-hidden py-6 py-xl-7 bg-body-tertiary position-relative" data-bs-theme="dark">
+        <div class="container">
+            <div>
+                <div class="py-4 ">
+                    <div class="row g-4 align-items-center justify-content-between">
+                        <div class="col-12 col-md-6">
+                            <h3 class="text-body-emphasis leading-6 text-sm fw-semibold">Agence Immobilier Meknes</h3>
+                            <p class="mb-0 text-body-secondary leading-6 text-sm">
+                                Contactez-nous              
+                                +212 6 66 51 23 73 
+                         <br>   +212 6 66 50 58 59
+                            
+                            </p>
+                        </div>
+
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <div class="py-2 d-flex flex-column flex-md-row gap-4 justify-content-md-between align-items-md-center">
+                                <p class="mb-0 text-body-tertiary text-xs leading-5">
+                                    ©  
+                                    <span class="current-year"></span>
+                                    Liens Rapides
+                            <br>        Q&A
+                            <br>         Contact
+                            <br>        Vente
+                            <br>        Location
+                                </p>
+            
+                                <div class="order-first order-md-last">
+                               
+            
+                                  
+                                    <!-- youtube icon -->
+                                    <a href="https://www.youtube.com/c/AgenceImmobiliereIdrissi"
+                                        class="btn my-2 p-2 text-body bg-body-secondary social rounded-circle"
+                                        >
+                                        <span class="d-flex justify-content-center align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        
+        </div>
+    </footer>
+  
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-primary btn-back-to-top rounded-circle justify-content-center align-items-center p-2 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+        </svg>
+    </button>
+
+
+	
+	<!-- Bootstrap JavaScript: Bundle with Popper -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/aos/aos.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+
+
+</body>
+</html>
